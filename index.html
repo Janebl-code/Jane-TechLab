@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <!-- Google Fonts: Outfit (headings) & Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <title id="webname">Jane TechLab</title>
+    <link rel="stylesheet" type="text/css" href="SiteStyle/Style.css" >
+
+</head>
+<body>
+    <div class="logo">
+        <img src="img/Jane_TechLab_sin_fondo.png" alt="Logo">
+    </div>
+    <h1>Jane techlab</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mi</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<div class="slider">
+<img id="imagenPrincipal" src="img/smartphone_apps.jpg" alt="Aplicaciones móviles">
+</div>
+
+<script>
+const imagenes = [
+"img/html_code.jpg",
+"img/trabajando_en_mi_ipad.jpg",
+"img/planificacion_desarrollo.jpg"
+];
+
+let indice = 0;
+function siguienteImagen(){
+indice++;
+if(indice >= imagenes.length){
+indice = 0;
+}
+document.getElementById("imagenPrincipal").src =
+imagenes[indice];
+}
+setInterval(siguienteImagen,4000);
+</script>
+
+
+    <div class="contenido">
+        <div class="articulos">
+            <div class="secciones">
+                <div><h2>Transformamos ideas en soluciones digitales</h2>
+                    
+                <h3>Creamos experiencias digitales excepcionales con tecnología de vanguardia y diseño de alta fidelidad</h3>
+                <br>
+                <p>Desarrollamos Websites, Aplicaciones, Bases de datos y soluciones tecnológicas que se complementan con los proyectos de su empresa. </p>
+                </div>
+                <div>
+                    <img src="img/cartoon_smartphone_apps.png" alt="Desarrollo digital">
+                </div>
+            </div>
+            <div class="secciones">
+                <div><h2>Servicios Personalizados</h2>
+                <p>En Jane TechLab nos especializamos en materializar la visión del cliente proveyendo ideas y herramientas adecuadas que potencian su negocio o facilitan el desarrollo de sus proyectos. Convertimos problemas complejos en interfaces intuitivas, limpias y orientadas a cada cliente. </p>
+                </div>
+                <div>
+                    <img src="img/Illustracion_de_tecnologia_investigacion_etc.png" alt="Foto de ilustraciones">
+                </div>
+            </div>
+        </div>
+        <div class="menu-secundario">
+            <a href="">Documentación</a><br>
+            <br>
+            <a href="">Videos</a><br>
+            <br>
+            <a href="">Templates</a><br>
+            <br>
+            <a href="">Novedades</a>
+        </div>
+    </div>
+<footer>
+    <div class="columna">
+    <h3>Navegación</h3>
+        <a href="">Sobre mi</a><br>
+        <br>
+        <a href="">Servicios</a><br>
+        <br>
+       <a href="">Blog </a><br>
+        <br>
+        <a href="">Contacto </a><br>
+    </div>
+ 
+    <div class="columna">
+    <h3>Recursos</h3>
+       <a href=""> Documentación</a><br>
+        <br>
+        <a href=""> Videos</a><br>
+        <br>
+        <a href=""> Templates</a><br>
+        <br>
+        <a href="">Novedades</a><br>
+    </div>
+
+    <div class="columna">
+        <h3>Suscríbete</h3>
+        <br>
+        <form>
+            <input type="email"
+            placeholder="Correo electrónico">
+ 
+            <button>Suscribirse</button>
+            <br>
+        </form>
+    </div>
+
+    <address class="columna">
+        <strong>Janelyz Bosques Lorenzo
+        </strong><br>
+        <a href="mailto:jbosques6947@live.edpuniversity.edu">jbosques6947@live.edpuniversity.edu</a> 
+    </address>
+
+</footer>
+<div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2026 Jane TechLab. Todos los derechos reservados.</p>
+            </div>
+</div>
+</body>
+</html>
